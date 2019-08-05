@@ -1,7 +1,7 @@
-# backend_prueba
-###V Semestre LIMAV
+# Backend Prueba
+### V Semestre LIMAV
 
-###Integrantes
+### Integrantes
 - Julieta Carolina Martínez Martínez
 - María José García Torres
 - Juan Carlos Rodriguez Causil
