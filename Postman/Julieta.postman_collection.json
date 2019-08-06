@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "2005a4ed-6a24-42b2-b7fe-d867ce1535c0",
+		"name": "Julieta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get servicios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/servicios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servicios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuarios/5d3f4beb1c9d440000918874",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						"5d3f4beb1c9d440000918874"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get usuario ciudad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuarios/ciudades/monteria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						"ciudades",
+						"monteria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"datos\": {\n\t\t\"nombre1\": \"Ricardo\",\n\t\t\"nombre2\": \"Avelino\",\n\t\t\"apellido1\": \"Madeira\",\n\t\t\"apellido2\": \"Dos Santos\",\n\t\t\"identificacion\": \"569095467890\",\n\t\t\"sexo\": \"masculino\",\n\t\t\"edad\": \"18\",\n\t\t\"numero_cuenta\": \"45678654345678\",\n\t\t\"metodo_entrada\": \"solicitante\",\n\t\t\"direccion\": \"brasilia 44\",\n\t\t\"celular\": \"3007658965\",\n\t\t\"ciudad\": \"bogota\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del usuarios",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuarios/5d486bdd696ee72248b747a9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						"5d486bdd696ee72248b747a9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get servicios pintar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/servicios/pintar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servicios",
+						"pintar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get servicios id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/servicios/5d3f29c61c9d4400007494c5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servicios",
+						"5d3f29c61c9d4400007494c5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categorias",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/categorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categorias nombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/categorias/temas/TareasEscolares",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categorias",
+						"temas",
+						"TareasEscolares"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categorias id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/categorias/5d4334641c9d440000618339",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categorias",
+						"5d4334641c9d440000618339"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get notificaciones",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/notificaciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notificaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get notificaciones id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/notificaciones/5d3f37721c9d4400007494c7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notificaciones",
+						"5d3f37721c9d4400007494c7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get notificaciones estado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cita\": {\n\t\t\"fecha\": \"25-08-2019\",\n\t\t\"veterinario\": \"José Miguel Vega Bedoya\",\n\t\t\"mascota\": \"Sófocles\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/notificaciones/estado/visto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notificaciones",
+						"estado",
+						"visto"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
