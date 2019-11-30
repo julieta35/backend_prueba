@@ -1,5 +1,5 @@
 # Backend
-###  IV semestre LIMAV
+###  VI semestre LIMAV
 
 ### Integrantes
 - Julieta Carolina Martínez Martínez
